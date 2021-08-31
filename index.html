@@ -8,7 +8,59 @@
 <body>
     <h1 style="color:rgb(253, 21, 21);">ASSIGNMENT 1 ANSWERS</h1>
     <p>
-        
+        ART - 1 - The maximum number of users that can be supported will be 7 Users as bandwidth size is 150 mbps and each user require a 20 mbps of bandwidth so that is why maximum 7 users can be supported.
+
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        PART - 2 - NO, 13 users cannot be supported in circuit-switching because it will require a bandwidth of 13 x 20 = 260 mbps. but the bandwidth is of 150 mbps that is why it cannot support 13 users.
+
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        PART - 3 - Probability that a given (specific) user is Transmitting , and the remaining users are not transmitting.
+
+        let the probability that a specific user is transmitting be X. Therefore X = 10% that is 0.1
+
+        the probability that one specific user is not busy is (1-X) Let it be Y = 90% that is 0.9
+
+        the probability that all the other (Nps - 1) users are not transmitting is (1 - X)(Nps - 1) that is (0.9)12 as Nps = 13 users
+
+        thus the probability that one specific user is transmitting and other are not transmitting is X * (1 - X)(Nps - 1)
+
+        X * (Y)12 = 0.1 * (0.9)12 = 0.0282429536481 = 0.028 (rounding off till 3 digits after points)
+
+        therefore, PROBABILITY = 0.028
+
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        PART - 4 - Probability that one user (any one among the 13 users ) is transmitting and remaining is not transmitting will be
+
+        Probability = Nps * X * (1 - X)(Nps - 1)
+
+        Probability = 13 * 0.1 * (0.9)12  
+
+        Probability = 0.3671583974253 , that is equal to 0.37 (rounding of to 2 digits after point)
+
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        PART - 5 - The fraction of link capacity used by the single user will be 20/150 because total bandwidth size is 150 mbps and one user requires 20 mbps of bandwidth therefore it will be 0.1333333..... round of 0.13
+
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        PART - 6 - The Probability that ANY 8 out of 13 ,
+
+        the probability that any 8 out of 13 are transmitting and remaining are not transmitting will be (13,8) * ( X8 )*( Y5 )
+
+        where (13 , 8 ) are the coefficient of binomial distribution.
+
+        Therefore, PROBABILITY = CHOOSE (13,8) * (0.1)8 * (0.9)5 =  13C8 * (0.1)8 * (0.9)5
+
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        PART - 7 - Probability that more than 7 users are transmitting will be
+
+        Where X= 0.1 And Y = 0.9  
+
+        Probability = 13Ci (0.1)i(0.9)13 - i  where value of i can be between = 8 and 13 including both 8 and 13 .
     </p>
 </body>
 </html>
